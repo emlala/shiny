@@ -1,14 +1,14 @@
 const box = document.getElementById('box');
 
 const colours = ['#fff3d4', '#f2e0ae', '#f0e9d5', '#fff7e0', '#fffdf7', '#fffdfa'];
-const circles = 441
+const squares = 441
 
-for(let i = 0; i < circles; i++) {
-  const circle = document.createElement('div')
-  circle.classList.add('circle')
-  circle.addEventListener('mouseover', () =>  setColour(circle))
-  circle.addEventListener('mouseout', () =>  removeColour(circle))
-  box.appendChild(circle)
+for(let i = 0; i < squares; i++) {
+  const square = document.createElement('div')
+  square.classList.add('square')
+  square.addEventListener('mouseover', () =>  setColour(square))
+  square.addEventListener('mouseout', () =>  removeColour(square))
+  box.appendChild(square)
 }
 
 function setColour(ele) {
@@ -19,7 +19,7 @@ function setColour(ele) {
 
 function removeColour(ele) {
     ele.style.backgroundColor = '#1f1f1f'
-    ele.style.boxShadow = '0 0 2px rgb(82, 82, 82)'
+    ele.style.boxShadow = '0 0 2px #525252'
 }
 
 function getRandomColour() {

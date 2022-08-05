@@ -1,4 +1,4 @@
-const container = document.getElementById('container');
+const box = document.getElementById('box');
 
 const colours = ['#fff3d4', '#f2e0ae', '#f0e9d5', '#fff7e0', '#fffdf7', '#fffdfa'];
 const circles = 441
@@ -8,7 +8,7 @@ for(let i = 0; i < circles; i++) {
   circle.classList.add('circle')
   circle.addEventListener('mouseover', () =>  setColour(circle))
   circle.addEventListener('mouseout', () =>  removeColour(circle))
-  container.appendChild(circle)
+  box.appendChild(circle)
 }
 
 function setColour(ele) {

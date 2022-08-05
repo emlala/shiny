@@ -13,11 +13,11 @@ body {
     margin: 0;
 }
 
-.container {
+.box {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap; /* elements flow to a new row */
+    flex-wrap: wrap;
     max-width: 550px;
     max-height: 550px;
     overflow: hidden;
@@ -35,6 +35,6 @@ body {
 }
 
 .circle:hover {
-    transition-duration: 0s; /* appreas instantly, but takes 1s to fade away */
+    transition-duration: 0s;
 }
 
